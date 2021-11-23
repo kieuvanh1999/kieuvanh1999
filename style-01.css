@@ -1,0 +1,120 @@
+*{
+    color: #fff;
+    font-family: monospace;
+    font-size: 14px;
+}
+article{
+    height: 450px;
+    background: #1d1d1d;
+
+}
+.container {
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    width: 1680px;
+}
+.hover-is{
+    width: 250px;
+    position: relative;
+}
+.square {
+    background: rgb(56, 56, 56);
+    border: 5px solid #f1c329;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    position: relative;
+    margin: auto;
+}
+.square-1 {
+    background: rgb(255, 240, 173);
+    width: 12px;
+    height: 12px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+.images {
+    width: 250px;
+    height: 130px;
+    background-image: url('imager_2_4256_700.jpg');
+    background-size: cover;
+    margin: 0 0 50px 0;
+}
+.line::before{
+    position: absolute;
+    content: '';
+    border-left: 2px dashed #ffda44;
+    width: 1px;
+    height: 35px;
+    top: 41%;
+    left: 124px;
+}
+.hover-is:hover .square{
+    background: #f1c329;
+    margin-top: 48px;
+}
+.hover-is:hover .images{
+    box-shadow: inset 1px 1px 8px 0 #ffb400, -1px 1px 12px 0 #ffb400;
+    border: 2px solid #f0ce45;
+    margin: -2px 0 0 -2px;
+}
+.hover-is::after{
+    position: absolute;
+    content: '';
+    border-left: 2px solid #ffda44;
+    width: 1px;
+    height: 120px;
+    top: 136px;
+    left: 85%;
+    transform: rotate(90deg);
+}
+.hover-is-1 .square {
+    margin: 0 0 0 42px;
+}
+.text-none-background{
+    border-left: 2px dashed #ffda44;
+    margin: 84px 0 0 22.5%;
+}
+.text-background {
+    border-left: 2px dashed #ffda44;
+    margin: 15px 0 0 22.5%;
+    padding-top: 20px;
+    width: 170px;
+}
+.text-background div{
+    background: #fff0ad;
+    padding: 15px;
+    margin-left: 25px;
+}
+.text-background div p{
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+.hover-is-1{
+    position: relative;
+}
+.hover-is-1::before{
+    content: 'NOV 2021';
+    position: absolute;
+    top: 57%;
+    font-size: 17px;
+    left: 40%;
+
+}
+.hover-is-1::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60px;
+    border-left: 2px solid #ffda44;
+    transform: rotate(90deg);
+    top: 167px;
+    left: 220px;
+}
+.hover-is-1 .row:hover .square{
+    background: #f1c329;
+}
